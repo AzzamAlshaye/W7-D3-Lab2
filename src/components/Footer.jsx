@@ -5,7 +5,7 @@ import { FaTwitter, FaDiscord, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-200">
+    <footer className="bg-neutral-800 text-gray-200">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand & Social */}
         <div className="space-y-4">

@@ -45,6 +45,7 @@ export default function ArticlesList() {
             to={`/articles/${article.id}`}
             className="bg-white rounded-lg shadow-md hover:shadow-lg transition flex flex-col p-6 h-full"
           >
+            <img src="News.webp" alt=" news image" className="h-1/2" />
             <h2 className="text-xl font-semibold mb-2 text-gray-800">
               {article.title}
             </h2>

@@ -16,7 +16,7 @@ export default function Navbar() {
      }`;
 
   return (
-    <nav className="bg-black text-white shadow-md relative">
+    <nav className="bg-neutral-800 text-white shadow-md relative">
       <div className="container mx-auto flex items-center justify-between lg:justify-normal lg:gap-10 p-4">
         {/* Brand */}
         <Link to="/" className="flex items-center space-x-2">
