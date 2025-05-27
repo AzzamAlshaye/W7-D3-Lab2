@@ -43,20 +43,28 @@ export default function ArticlesList() {
           <Link
             key={article.id}
             to={`/articles/${article.id}`}
-            className="bg-white rounded-lg shadow-md hover:shadow-lg transition flex flex-col p-6 h-full"
+            className="bg-white rounded-lg shadow-md hover:shadow-lg transition flex flex-col overflow-hidden"
           >
-            <img src="News.webp" alt=" news image" className="h-1/2" />
-            <h2 className="text-xl font-semibold mb-2 text-gray-800">
-              {article.title}
-            </h2>
-            <p className="text-gray-600 flex-grow">
-              {article.body.length > 100
-                ? article.body.substring(0, 100) + "..."
-                : article.body}
-            </p>
-            <span className="mt-4 text-blue-600 font-medium hover:underline">
-              Read More →
-            </span>
+            {/* Make the image full-width and cropped */}
+            <img
+              src="News.webp"
+              alt="news image"
+              className="w-full h-50 object-cover"
+            />
+
+            <div className="p-6 flex flex-col flex-grow">
+              <h2 className="text-xl font-semibold mb-2 text-gray-800">
+                {article.title}
+              </h2>
+              <p className="text-gray-600 flex-grow">
+                {article.body.length > 100
+                  ? article.body.substring(0, 100) + "..."
+                  : article.body}
+              </p>
+              <span className="mt-4 text-blue-600 font-medium hover:underline">
+                Read More →
+              </span>
+            </div>
           </Link>
         ))}
       </div>
